@@ -1,0 +1,89 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b); /* darker coder tones */
+  color: #e2e8f0; /* soft light text */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form container */
+form {
+  background: rgba(30, 41, 59, 0.9); /* dark bluish-gray glass effect */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 40px 50px;
+  border-radius: 15px;
+  width: 350px;
+  text-align: center;
+}
+
+/* Input fields */
+#textHolder,
+#messageHolder {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background-color: #1e293b; /* dark input background */
+  color: black;            /* soft text */
+  border: 1px solid #334155; /* subtle outline */
+  box-shadow: none;
+  transition: all 0.2s ease;
+}
+
+#textHolder:focus,
+#messageHolder:focus {
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Message textarea */
+#messageHolder {
+  resize: none;
+  height: 120px;
+}
+
+/* Submit button */
+#submitBtn {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #06b6d4; /* teal-cyan button */
+  color: #0f172a;           /* dark text inside */
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#submitBtn:hover {
+  background-color: #0ea5e9; /* brighter on hover */
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.5); /* soft glow */
+  transform: translateY(-2px);
+}
+
+#submitBtn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Optional title styling */
+h2 {
+  margin-bottom: 20px;
+  color: #38bdf8; /* cyan accent title */
+  font-weight: 600;
+  letter-spacing: 1px;
+}
